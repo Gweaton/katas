@@ -28,4 +28,15 @@ describe 'fizzbuzz' do
   it 'should test for general indivisibility' do
     expect(is_divisible_by?(2, 7)).to be false
   end
+
+  it 'should return "fizz" when passed a multiple of 3' do
+    expect(fizzbuzz(3)).to eq "fizz"
+  end
+  it 'should return "buzz" when passed a multiple of 5' do
+    expect(fizzbuzz(5)).to eq "buzz"
+  end
+
+
+
+
 end
