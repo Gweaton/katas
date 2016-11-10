@@ -22,4 +22,10 @@ describe 'fizzbuzz' do
     expect(is_divisible_by_3_and_5?(4)).to be false
   end
 
+  it 'should test for general divisibility' do
+    expect(is_divisible_by?(2, 4)).to be true
+  end
+  it 'should test for general indivisibility' do
+    expect(is_divisible_by?(2, 7)).to be false
+  end
 end
