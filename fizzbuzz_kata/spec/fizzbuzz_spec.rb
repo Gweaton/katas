@@ -38,7 +38,11 @@ describe 'fizzbuzz' do
   it 'should return "fizzbuzz" when passed a multiple of 3 and 5' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
-
+  it 'should return any other number passed to it' do
+    expect(fizzbuzz(1)).to eq 1
+    expect(fizzbuzz(4)).to eq 4
+    expect(fizzbuzz(8)).to eq 8
+  end
 
 
 end
