@@ -43,6 +43,8 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(4)).to eq 4
     expect(fizzbuzz(8)).to eq 8
   end
-
+  it 'should return 0 when passed 0' do
+    expect(fizzbuzz(0)).to eq 0
+  end
 
 end
