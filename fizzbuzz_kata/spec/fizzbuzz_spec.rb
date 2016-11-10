@@ -22,6 +22,16 @@ describe 'fizzbuzz' do
     expect(is_divisible_by_3_and_5?(3)).to be false
   end
 
+  it 'should test for divisibility' do
+    expect(is_divisible_by?(2, 6)).to be true
+    expect(is_divisible_by?(5, 10)).to be true
+  end
+
+  it 'should test for indivisibility' do
+    expect(is_divisible_by?(3, 5)).to eq false
+    expect(is_divisible_by?(2, 7)).to eq false
+  end
+
   it 'should return "fizz" when passed a multiple of 3' do
     expect(fizzbuzz(3)).to eq "fizz"
   end
