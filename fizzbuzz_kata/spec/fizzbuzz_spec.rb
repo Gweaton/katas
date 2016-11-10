@@ -34,6 +34,9 @@ describe 'fizzbuzz' do
   it 'should return any other number passed to it' do
     expect(fizzbuzz(2)).to eq 2
   end
+  it 'should return 0 when passed 0' do
+    expect(fizzbuzz(0)).to eq 0
+  end
 
 
 end
