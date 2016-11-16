@@ -1,8 +1,16 @@
 def roman_numerals(number)
-  return "I" if number == 1
-  return "V" if number == 5
-  return "X" if number == 10
-  return "L" if number == 50
-  return "C" if number == 100
-  return "M" if number == 1000
+
+  numeral = {
+              1000 => "M",
+              500 => "D",
+              100 => "C",
+              50 => "L",
+              10 => "X",
+              5 => "V",
+              1 =>"I"
+  }
+
+  numeral[number]
+
+
 end
