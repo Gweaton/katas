@@ -47,6 +47,9 @@ describe "roman_numerals" do
     it "should return 'CD' when passed 400" do
       expect(roman_numerals(400)).to eq "CD"
     end
+    it "should return 'CM' when passed 900" do
+      expect(roman_numerals(900)).to eq "CM"
+    end
   end
   context "combinations" do
     it "should return 'II' when passed 2" do
