@@ -31,6 +31,12 @@ describe "roman_numerals" do
       expect(roman_numerals(1000)).to eq "M"
     end
   end
-
-
+  context "more than one digit" do
+    it "should return 'IV' when passed 4" do
+      expect(roman_numerals(4)).to eq "IV"
+    end
+    it "should return 'IX' when passed 9" do
+      expect(roman_numerals(9)).to eq "IX"
+    end
+  end
 end
