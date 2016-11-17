@@ -44,5 +44,19 @@ describe "roman_numerals" do
     it "should return 'XC' when passed 90" do
       expect(roman_numerals(90)).to eq "XC"
     end
+    it "should return 'CD' when passed 400" do
+      expect(roman_numerals(400)).to eq "CD"
+    end
+  end
+  context "combinations" do
+    it "should return 'II' when passed 2" do
+      expect(roman_numerals(2)).to eq 'II'
+    end
+    it "should return 'VIII' when passed 8" do
+      expect(roman_numerals(8)).to eq 'VIII'
+    end
+    it "should return 'XCIV' when passed 94" do
+      expect(roman_numerals(94)).to eq 'XCIV'
+    end
   end
 end
