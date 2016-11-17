@@ -38,5 +38,11 @@ describe "roman_numerals" do
     it "should return 'IX' when passed 9" do
       expect(roman_numerals(9)).to eq "IX"
     end
+    it "should return 'XL' when passed 40" do
+      expect(roman_numerals(40)).to eq "XL"
+    end
+    it "should return 'XC' when passed 90" do
+      expect(roman_numerals(90)).to eq "XC"
+    end
   end
 end
